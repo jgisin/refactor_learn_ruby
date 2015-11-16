@@ -107,7 +107,7 @@ describe RPNCalculator do
     calculator.push(2)
     calculator.push(3)
     calculator.minus
-    calculator.value.should == -1
+    expect(calculator.value).to eq(-1)
   end
 
   it &quot;adds and subtracts&quot; do
